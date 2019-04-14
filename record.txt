@@ -1,0 +1,8 @@
+1. git diff readme.txt 与 git diff HEAD -- readme.txt
+	(1) git diff readme.txt
+	工作区与repository之间readme.txt的比较。1. repository中stage没有readme.txt的修改，则将工作区的readme.txt与
+版本库的readme.txt比较；2. repository中stage有readme.txt的修改，则将工作区的readme.txt与stage中的readme.txt比较。
+
+	(2) git diff HEAD -- readme.txt
+	工作区/暂存区中readme.txt与版本库中readme.txt的比较。1. 工作区readme.txt尚未add到暂存区，则将工作区的readme.txt
+与版本库的readme.txt比较；2. 工作区对readme.txt的修改全部add到stage，则是stage的readme.txt与版本库的readme.txt比较。
